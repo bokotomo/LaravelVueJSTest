@@ -1,5 +1,8 @@
 # LaravelVueJSTest
 
+# version  
+Laravel Framework 5.7.9  
+
 # first setup
 1.  
 git clone https://github.com/Laradock/laradock.git  
@@ -45,4 +48,13 @@ docker-compose up -d nginx mysql redis beanstalkd phpmyadmin
 
 14. 
 http://localhost  
+
+15. vue setup  
+docker-compose exec -it workspace bin/bash  
+cd testapp  
+npm install  
+npm run dev  
+
+# npm run dev
+docker-compose exec workspace /bin/bash -c "cd testapp && npm run dev"  
 
